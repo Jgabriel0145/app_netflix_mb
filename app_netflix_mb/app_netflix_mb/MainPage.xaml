@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app_netflix_mb.MainPage"
+             BackgroundColor="#2f2f30">
+
+    <Grid RowSpacing="1" ColumnSpacing="10" Padding="10" ColumnDefinitions="*,*" RowDefinitions="*,*,*">
+
+        <Image x:Name="logo" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" HeightRequest="50"/>
+
+        <Button Text="Aventura" Grid.Row="1" Grid.Column="0" HorizontalOptions="Fill"
+                VerticalOptions="Center" Style="{StaticResource ButtonVermelhoMenu}"
+                Clicked="Btn_Open_Aventura"/>
+
+        <Button Text="Animação" Grid.Row="1" Grid.Column="1" HorizontalOptions="Fill"
+                VerticalOptions="Center" Style="{StaticResource ButtonVermelhoMenu}"
+                Clicked="Btn_Open_Animacao"/>
+
+        <Button Text="Drama" Grid.Row="2" Grid.Column="0" HorizontalOptions="Fill"
+                VerticalOptions="Center" Style="{StaticResource ButtonVermelhoMenu}"
+                Clicked="Btn_Open_Drama"/>
+
+        <Button Text="Fantasia" Grid.Row="2" Grid.Column="1" HorizontalOptions="Fill"
+                VerticalOptions="Center" Style="{StaticResource ButtonVermelhoMenu}"
+                Clicked="Btn_Open_Fantasia"/>
+
+
+    </Grid>
+</ContentPage>

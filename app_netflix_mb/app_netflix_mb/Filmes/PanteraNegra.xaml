@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app_netflix_mb.Filmes.PanteraNegra">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+
+            <Image x:Name="logo" Style="{StaticResource LogoNoFilme}" Margin="5"/>
+
+            <Grid ColumnDefinitions="*,*" RowDefinitions="300,*">
+
+                <WebView x:Name="vizualizador" Grid.ColumnSpan="2"
+                         Grid.Column="0" Grid.Row="0" 
+                         VerticalOptions="FillAndExpand"
+                         BackgroundColor="#2f2f30"/>
+
+                <Image x:Name="poster" Grid.Row="1" Grid.Column="0"
+                       Aspect="AspectFill"/>
+
+                <StackLayout Grid.Column="1" Grid.Row="1">
+                    <Label Text="Nome: " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="Pantera Negra" Style="{StaticResource LabelTextoBranco}"/>
+                    <Label Text="Ano de lançamento: " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="15 de fevereiro de 2018" Style="{StaticResource LabelTextoBranco}"/>
+                    <Label Text="Direção: " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="Ryan Coogler" Style="{StaticResource LabelTextoBranco}"/>
+                </StackLayout>
+            </Grid>
+
+            <StackLayout>
+                <ScrollView>
+                    <Label Text="Em Pantera Negra, após a morte do rei T'Chaka (John Kani), o príncipe T'Challa (Chadwick Boseman) retorna a Wakanda para a cerimônia de coroação. Nela são reunidas as cinco tribos que compõem o reino, sendo que uma delas, os Jabari, não apoia o atual governo. T'Challa logo recebe o apoio de Okoye (Danai Gurira), a chefe da guarda de Wakanda, da irmã Shuri (Letitia Wright), que coordena a área tecnológica do reino, e também de Nakia (Lupita Nyong'o), a grande paixão do atual Pantera Negra, que não quer se tornar rainha. Juntos, eles estão à procura de Ulysses Klaue (Andy Serkis), que roubou de Wakanda um punhado de vibranium, alguns anos atrás." 
+                           Style="{StaticResource LabelTextoBranco}"
+                           Padding="7"/>
+                </ScrollView>
+            </StackLayout>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

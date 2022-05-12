@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app_netflix_mb.Filmes.HomemAranha"
+             BackgroundColor="#2f2f30">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+
+            <Image x:Name="logo" Style="{StaticResource LogoNoFilme}" Margin="5"/>
+
+            <Grid ColumnDefinitions="*,*" RowDefinitions="300,*">
+
+                <WebView x:Name="vizualizador" Grid.ColumnSpan="2"
+                         Grid.Column="0" Grid.Row="0" 
+                         VerticalOptions="FillAndExpand"
+                         BackgroundColor="#2f2f30"/>
+
+                <Image x:Name="poster" Grid.Row="1" Grid.Column="0"
+                       Aspect="AspectFill"/>
+
+                <StackLayout Grid.Column="1" Grid.Row="1">
+                    <Label Text="Nome: " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="Homem-Aranha: Sem Volta para Casa" Style="{StaticResource LabelTextoBranco}"/>
+                    <Label Text="Ano de lançamento: " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="16 de dezembro de 2021" Style="{StaticResource LabelTextoBranco}"/>
+                    <Label Text="Direção: " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="Jon Watts" Style="{StaticResource LabelTextoBranco}"/>
+                </StackLayout>
+            </Grid>
+
+            <StackLayout>
+                <ScrollView>
+                    <Label Text="Em Homem-Aranha: Sem Volta para Casa, Peter Parker (Tom Holland) precisará lidar com as consequências da sua identidade como o herói mais querido do mundo após ter sido revelada pela reportagem do Clarim Diário, com uma gravação feita por Mysterio (Jake Gyllenhaal) no filme anterior. Incapaz de separar sua vida normal das aventuras de ser um super-herói, além de ter sua reputação arruinada por acharem que foi ele quem matou Mysterio e pondo em risco seus entes mais queridos, Parker pede ao Doutor Estranho (Benedict Cumberbatch) para que todos esqueçam sua verdadeira identidade. Entretanto, o feitiço não sai como planejado e a situação torna-se ainda mais perigosa quando vilões de outras versões de Homem-Aranha de outro universos acabam indo para seu mundo. Agora, Peter não só deter vilões de suas outras versões e fazer com que eles voltem para seu universo original, mas também aprender que, com grandes poderes vem grandes responsabilidades como herói." 
+                           Style="{StaticResource LabelTextoBranco}"
+                           Padding="7"/>
+                </ScrollView>
+            </StackLayout>
+            
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

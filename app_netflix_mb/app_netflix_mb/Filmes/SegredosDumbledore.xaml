@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app_netflix_mb.Filmes.SegredosDumbledore">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+
+            <Image x:Name="logo" Style="{StaticResource LogoNoFilme}" Margin="5"/>
+
+            <Grid ColumnDefinitions="*,*" RowDefinitions="300,*">
+
+                <WebView x:Name="vizualizador" Grid.ColumnSpan="2"
+                         Grid.Column="0" Grid.Row="0" 
+                         VerticalOptions="FillAndExpand"
+                         BackgroundColor="#2f2f30"/>
+
+                <Image x:Name="poster" Grid.Row="1" Grid.Column="0"
+                       Aspect="AspectFill"/>
+
+                <StackLayout Grid.Column="1" Grid.Row="1">
+                    <Label Text="Nome: " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="Animais Fantásticos: Os Segredos de Dumbledore" Style="{StaticResource LabelTextoBranco}"/>
+                    <Label Text="Ano de lançamento: " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="14 de abril de 2022" Style="{StaticResource LabelTextoBranco}"/>
+                    <Label Text="Direção: " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="David Yates" Style="{StaticResource LabelTextoBranco}"/>
+                </StackLayout>
+            </Grid>
+
+            <StackLayout>
+                <ScrollView>
+                    <Label Text="Animais Fantásticos: Os Segredos de Dumbledore é a sequência das aventuras de Newt Scamander (Eddie Redmayne), um magizoologista que carrega em sua maleta uma coleção de fantásticos animais do mundo da magia descoberta em suas viagens. Dessa vez, ele é convocado por Albus Dumbledore (Jude Law) na luta contra o vilão Grindelwald (Mads Mikkelsen). A trama mostra por que o célebre bruxo de Hogwarts, que sabe da busca por controle de Grindelwald e é incapaz de detê-lo sozinho, confia no magizoologista para liderar uma equipe de bruxos, bruxas e um bravo padeiro trouxa em uma missão perigosa. Ao longo do enredo, eles encontrarão velhos e novos animais fantásticos, além de enfrentar a crescente legião de seguidores do vilão. Mas o que o grupo de Scamander não sabe é que Grindelwald colocará o Mundo Mágico em uma luta contra o mundo dos trouxas. Enquanto o universo da magia fica mais dividido, Dumbledore deve decidir por quanto tempo ele ficará à margem da guerra que se aproxima." 
+                           Style="{StaticResource LabelTextoBranco}"
+                           Padding="7"/>
+                </ScrollView>
+            </StackLayout>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app_netflix_mb.Filmes.Halo"
+             BackgroundColor="#2f2f30">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+
+            <Image x:Name="logo" Style="{StaticResource LogoNoFilme}" Margin="5"/>
+
+            <Grid ColumnDefinitions="*,*" RowDefinitions="300,*">
+
+                <WebView x:Name="vizualizador" Grid.ColumnSpan="2"
+                         Grid.Column="0" Grid.Row="0" 
+                         VerticalOptions="FillAndExpand"
+                         BackgroundColor="#2f2f30"/>
+
+                <Image x:Name="poster" Grid.Row="1" Grid.Column="0"
+                       Aspect="AspectFill"/>
+
+                <StackLayout Grid.Column="1" Grid.Row="1">
+                    <Label Text="Nome: " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="Halo" Style="{StaticResource LabelTextoBranco}"/>
+                    <Label Text="Ano de lançamento: " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="15 de novembro de 2001" Style="{StaticResource LabelTextoBranco}"/>
+                    <Label Text="Direção: " Style="{StaticResource LabelTextoVermelho}"/>
+                    <Label Text="Kyle Killen, Steven Kane" Style="{StaticResource LabelTextoBranco}"/>
+                </StackLayout>
+            </Grid>
+
+            <StackLayout>
+                <ScrollView>
+                    <Label Text="Em Halo, uma épica batalha acontece no durante o século XXVI entre a raça humana e uma espécie alienígena conhecida como Covenant. Após anos de domínio, quando colônias começam a se rebelar, a liderança da raça Covenant declara que humanos são hereges perante seus deuses e inicia uma onda genocida contra a raça humana. Após a redescoberta dos anéis de Halo, o líder Master Chief (Pablo Schreiber) ao lado de sua equipe e a inteligência artificial Cortana, irão tentar destruir o que para os Covenant é um instrumento poderoso. Em contrapartida, a espécie Covenant também passa por conflitos internos próprios quando um de seus comandantes é exilado e se alia junto com outros divergentes ao lado dos humanos. A trama explora a complexidade dessa nova sociedade em conflito e o passado de seus personagens, além de trazer incríveis cenas de ação." 
+                           Style="{StaticResource LabelTextoBranco}"
+                           Padding="7"/>
+                </ScrollView>
+            </StackLayout>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

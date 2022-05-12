@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="app_netflix_mb.Categorias.Aventura"
+             BackgroundColor="#2f2f30">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+
+            <Image x:Name="logo" Style="{StaticResource LogoNaListaDePosters}" Margin="10"/>
+
+            <ScrollView>
+
+                <Grid Padding="5" RowDefinitions="300,300" ColumnDefinitions="*,*">
+
+                    <ImageButton x:Name="btnHomemAranha" Grid.Row="0" Grid.Column="0"
+                                 Style="{StaticResource ButtonPosters}"
+                                 Clicked="btnHomemAranha_Clicked"/>
+
+                    <ImageButton x:Name="btnPanteraNegra" Grid.Row="0" Grid.Column="1"
+                                 Style="{StaticResource ButtonPosters}"
+                                 Clicked="btnPanteraNegra_Clicked"/>
+
+                    <ImageButton x:Name="btnSegredosDumbledore" Grid.Row="1" Grid.Column="0"
+                                 Style="{StaticResource ButtonPosters}"
+                                 Clicked="btnSegredosDumbledore_Clicked"/>
+
+                    <ImageButton x:Name="btnSonic" Grid.Row="1" Grid.Column="1"
+                                 Style="{StaticResource ButtonPosters}"
+                                 Clicked="btnSonic_Clicked"/>
+
+                </Grid>
+
+            </ScrollView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
